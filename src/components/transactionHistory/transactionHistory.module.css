@@ -1,0 +1,20 @@
+.transactionHistory {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  width: 700px;
+  margin: auto;
+}
+thead {
+  background-color: #85bff2;
+}
+
+th {
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+tbody tr:nth-child(2n) {
+  background-color: #ececec;
+}
