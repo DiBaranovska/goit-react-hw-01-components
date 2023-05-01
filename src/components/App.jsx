@@ -1,16 +1,22 @@
+import { Profile } from 'components/profile/profile';
+import { Statistics } from 'components/statistics/statistics';
+import { FriendList } from 'components/friendList/friendList';
+import profileData from 'user.json';
+import stats from 'data.json';
+import friends from 'friends.json';
+
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
+        flexDirection: 'column',
       }}
     >
-      React homework template
+      <Profile profile={profileData} />
+      <Statistics title="Upload stats" stats={stats} />
+      <FriendList friends={friends} />
     </div>
   );
 };
