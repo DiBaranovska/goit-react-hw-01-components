@@ -7,11 +7,6 @@ const colorItem = () => {
 };
 
 export const StatisticsItems = ({ label, percentage }) => {
-  let colorItem = () => {
-    return `#${Math.floor(Math.random() * 16777215)
-      .toString(16)
-      .padStart(6, 0)}`;
-  };
   return (
     <li className={css.item} style={{ backgroundColor: colorItem() }}>
       <span className={css.label}>{label}</span>
