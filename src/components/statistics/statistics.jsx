@@ -3,10 +3,10 @@ import { StatisticsItems } from '../statisticsList/statisticsList';
 import { StatisticsTitle } from '../statisticsTittle/statisticTitle';
 import css from './statistics.module.css';
 
-export const Statistics = ({ title, stats }) => {
+export const Statistics = ({ tittle, stats }) => {
   return (
     <section className={css.statistics}>
-      {title && <StatisticsTitle title={title} />}
+      {tittle && <StatisticsTitle tittle={tittle} />}
       <ul className={css.statList}>
         {stats.map(item => {
           return (
@@ -23,5 +23,10 @@ export const Statistics = ({ title, stats }) => {
 };
 
 Statistics.propTypes = {
-  stats: PropTypes.array.isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ),
+  tittle: PropTypes.string,
 };

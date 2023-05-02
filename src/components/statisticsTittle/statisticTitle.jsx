@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import css from './statisticsTitle.module.css';
 
-export const StatisticsTitle = ({ title }) => {
-  return <h2 className={css.title}>{title}</h2>;
+export const StatisticsTitle = ({ tittle }) => {
+  return <h2 className={css.tittle}>{tittle}</h2>;
 };
 
 StatisticsTitle.propTypes = {
-  tittle: PropTypes.string,
+  tittle: PropTypes.string.isRequired,
 };
