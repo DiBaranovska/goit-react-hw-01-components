@@ -1,0 +1,9 @@
+td {
+  text-align: center;
+  color: grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+tr:first-child {
+}
